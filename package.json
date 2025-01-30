@@ -1,0 +1,32 @@
+{
+  "name": "comparison-html-parsers",
+  "version": "0.0.0",
+  "description": "htmlのparse処理の比較検証",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint \"{src,test}/**/*.ts\" --max-warnings=0",
+    "lint:fix": "eslint \"{src,test}/**/*.ts\" --fix --max-warnings=0",
+    "type-check": "tsc --noEmit",
+    "build": "tsc",
+    "start": "node dist/main.js"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.19.0",
+    "@types/jsdom": "^21.1.7",
+    "@types/node": "^22.12.0",
+    "eslint": "^9.19.0",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.22.0"
+  },
+  "engines": {
+    "node": "22.13.1"
+  },
+  "volta": {
+    "node": "22.13.1"
+  },
+  "dependencies": {
+    "htmlparser2": "^10.0.0",
+    "jsdom": "^26.0.0"
+  }
+}
